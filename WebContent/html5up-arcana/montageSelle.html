@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Montage Selle Velo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo">Montage de la selle</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Accueil</a></li>
+								<li><a href="montageVelo.html">Montage d'un vélo</a></li>
+								<li class="current">
+									<a href="montagePiece.html">Montage d'une pièce</a>
+									<ul>
+										<li><a href="roueAvant.html">Changer la roue avant</a></li>
+										<li><a href="roueArriere.html">Changer la roue arrière</a></li>
+										<li><a href="montageSelle.html">Changer la selle</a></li>
+									</ul>
+								</li>
+								<li><a href="peindreVelo.html">Peindre un vélo</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+			<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+							
+                             <section>
+                                     <div class="container">
+                                             <h3>Outils nécessaires 	<button id="blist" class="button" onclick='toggle()'> >> </button></h3>
+                                             <ul id="list" style="display: none;">
+                                                     <li>Dégraissant</li>
+                                                     <li>Décapant</li>
+                                                     <li>Brosse à métaux</li>
+                                                     <li>Papier de verre</li>
+                                                     <li>Peinture</li>
+                                                     <li>Pistolet à peinture recommandé</li>
+                                             </ul>
+                                     </div>
+                             </section>
+                <article>             
+				<h3>Montage de la selle</h3>
+											<li>Utilisez l’outil multifonctions joint à la livraison</li>
+											<li>Mettez la tige de selle dans le tube de selle et réglez la selle à
+											la hauteur désirée (Img. 14)</li>
+											<img src="images/img14.png" alt="" width="30%" /><img src="images/img15.png" alt="" width="30%"/>
+											<p><b>Attention:</b> N’oubliez pas qu’en réglant la hauteur de la selle à
+											votre taille vous ne devez pas tirer la tige de selle au-delà d’une
+											hauteur maximale!
+											Le non respect de cette consigne pourrait provoquer des dégâts
+											matériels ou des accidents graves. (Img. 15)</p>
+				</article>
+				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+		<script type="text/javascript">
+	state = "down";
+	function toggle(){
+		if (state == "down"){
+			state = "up";
+			document.getElementById("blist").childNodes[0].nodeValue=String.fromCharCode(9650);
+		}
+		else{
+			state = "down";
+			document.getElementById("blist").childNodes[0].nodeValue=String.fromCharCode(9660);
+		}
+		$('#list').slideToggle(1000);
+	}
+</script>
+	</body>
+</html>
